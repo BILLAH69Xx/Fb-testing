@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a15d038d79.js" crossorigin="anonymous"></script>
+  <title>Inexic Studio Player</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+   .video-container {
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe id="video-player" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    const videoPlayer = document.getElementById('video-player');
+    const imageId = window.location.hash.slice(1);
+    const videoSrc = getVideoSourceFromImageId(imageId);
+    playVideo(videoSrc);
+
+    function playVideo(videoSrc) {
+      videoPlayer.src = videoSrc;
+    }
+
+    function getVideoSourceFromImageId(imageId) {
+      let videoSrc = '';
+
+      // Match the image ID with the corresponding video source
+      if (imageId === 'superspcric') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=superspcric';
+      } else if (imageId === 'astrocric') {
+        videoSrc = 'https://123ecast.me/embed.php?v=astrocric';
+      } else if (imageId === 'willowusa') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=willowusa';
+      } else if (imageId === 'tenspk') {
+        videoSrc = 'https://123ecast.me/embed.php?v=tenspk';
+      } else if (imageId === 'skyscric') {
+        videoSrc = 'https://123ecast.me/embed.php?v=skyscric';
+      } else if (imageId === 'fox501') {
+        videoSrc = 'https://stream.crichd.vip/update/fox501.php';
+      } else if (imageId === 'willowextra') {
+        videoSrc = 'https://stream.crichd.vip/update/willowextra.php';
+      } else if (imageId === 'ptv') {
+        videoSrc = '//stream.crichd.vip/update/ptv.php">';
+        
+        
+        
+        
+      } else if (imageId === 'bbtsp1') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=bbtsp1';
+      } else if (imageId === 'bbtsp2') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=bbtsp2';
+      } else if (imageId === 'bbtsp3') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=bbtsp3';
+      } else if (imageId === 'laligauk') {
+        videoSrc = 'https://stream.crichd.vip/update/laligauk.php';
+      } else if (imageId === 'superlaliga') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=superlaliga';
+      } else if (imageId === 'euro1') {
+        videoSrc = 'https://stream.crichd.vip/update/euro1.php';
+      } else if (imageId === 'ch2') {
+        videoSrc = 'https://stream.crichd.vip/update/ch2.php';
+      } else if (imageId === 'ch1') {
+        videoSrc = 'https://stream.crichd.vip/update/ch1.php';
+        
+        
+        
+      } else if (imageId === 'skysmixx') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=skysmixx';
+      } else if (imageId === 'skys1') {
+        videoSrc = 'https://stream.crichd.vip/update/skys1.php';
+      } else if (imageId === 'skysprem') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=skysprem';
+      } else if (imageId === 'skysfott') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=skysfott';
+      } else if (imageId === 'asports') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=asports';
+   
+      } else if (imageId === 'sony1') {
+        videoSrc = 'https://dai.google.com/linear/hls/event/wG75n5U8RrOKiFzaWObXbA/master.m3u8';
+      } else if (imageId === 'sony2') {
+        videoSrc = 'https://dai.google.com/linear/hls/event/V9h-iyOxRiGp41ppQScDSQ/master.m3u8';
+      } else if (imageId === 'sony3') {
+        videoSrc = 'https://dai.google.com/linear/hls/event/ltsCG7TBSCSDmyq0rQtvSA/master.m3u8';
+        
+        
+        
+      } else if (imageId === 'star') {
+        videoSrc = 'https://stream.crichd.vip/update/star.php';
+      } else if (imageId === 'superpremierleague') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=superpremierleague';
+      } else if (imageId === 'superspfb') {
+        videoSrc = 'https://zcasthd.xyz/embed.php?v=superspfb';
+      } else if (imageId === 'wwe') {
+        videoSrc = 'https://stream.crichd.vip/update/wwe.php';
+      } else if (imageId === 'star1hi') {
+        videoSrc = 'https://stream.crichd.vip/update/star1hi.php';
+      } else if (imageId === 'fox502') {
+        videoSrc = 'https://stream.crichd.vip/update/fox502.php';
+      } else if (imageId === 'fox503') {
+        videoSrc = 'https://stream.crichd.vip/update/fox503.php';
+      } else if (imageId === 'fox504') {
+        videoSrc = 'https://stream.crichd.vip/update/fox504.php';
+      } else if (imageId === 'ch3') {
+        videoSrc = 'https://stream.crichd.vip/update/ch3.php';
+      } else if (imageId === 'bein_E_1') {
+        videoSrc = 'bein1.html';
+      } else if (imageId === 'star_jalsha') {
+        videoSrc = 'https://extratvteam.site/JIO/player1.php?id=1918&slug=Jio_Cricket_English';
+      
+      }
+
+      return videoSrc;
+    }
+  </script>
+</body>
+</html>
+<style>
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #1a1a1a;
+    
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer span {
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+   
+  }
+</style>
+
+<div class="footer">
+  <div class="icon"><br>
+  <a href="index.html">
+   <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+   </a>
+  
+    <span>Home</span>
+</div>
+  <div class="icon">
+    <a href="https://play.google.com/store/apps/details?id=com.brave.browser">
+    <br>
+ <i class="fa-sharp fa-solid fa-ban" style="color: #ffffff;"></i>
+ </a>
+ 
+    <span>Ads Block</span>
+  </div>
+</div>

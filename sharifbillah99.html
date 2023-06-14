@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a15d038d79.js" crossorigin="anonymous"></script>
+<title> Inexic Studio Player</title>
+  <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" />
+ 
+</head>
+
+<body>
+  <div class="video-container">
+    <video
+      id="video-player"
+      class="video-js"
+      controls
+      preload="auto"
+      width="100%"
+      height="100%"
+      poster="https://raw.githubusercontent.com/BILLAH69Xx/TATAIPL/main/dda8bac8-fd53-47c0-be1c-c6334e2ece79.jpg"
+     
+    >
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+  </div>
+
+  <script>
+    const videoPlayer = document.getElementById('video-player');
+    const imageId = window.location.hash.slice(1);
+    const videoSrc = getVideoSourceFromImageId(imageId);
+    playVideo(videoSrc);
+
+    function playVideo(videoSrc) {
+      const sourceElement = document.createElement('source');
+      sourceElement.src = videoSrc;
+      sourceElement.type = 'application/x-mpegurl';
+
+      videoPlayer.innerHTML = '';
+      videoPlayer.appendChild(sourceElement);
+
+      videoPlayer.load();
+      videoPlayer.play();
+    }
+
+    function getVideoSourceFromImageId(imageId) {
+      let videoSrc = '';
+
+      // Match the image ID with the corresponding video source
+      if (imageId === 'btv_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/btv_hd.m3u8';
+      } else if (imageId === 'somoy_tv') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/somoy_tv.m3u8';
+      } else if (imageId === 'image3') {
+        videoSrc = 'video3.mp4';
+      
+      } else if (imageId === 'independent') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/independent.m3u8';
+      } else if (imageId === 'nagorik_tv_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/nagorik_tv_hd.m3u8';
+
+      } else if (imageId === 'rtv_b') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/rtv_b.m3u8';
+      } else if (imageId === 'star_jalsha') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/star_jalsha.m3u8';
+      } else if (imageId === 'zee_bangla') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/zee_bangla.m3u8';
+      } else if (imageId === 'colors_b') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/colors_b.m3u8';
+      } else if (imageId === 'sony_aath') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sony_aath.m3u8';
+      } else if (imageId === 'boisakhi') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/boisakhi.m3u8';
+      } else if (imageId === 'atn_bangla') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/atn_bangla.m3u8';
+        
+        
+        
+        
+        
+        
+        
+        
+      } else if (imageId === 'jalsha_movies') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/jalsha_movies.m3u8';
+      } else if (imageId === 'zee_bangla_cinema') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/zee_bangla_cinema.m3u8';
+      } else if (imageId === 'colors_bangla_cinema') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/colors_bangla_cinema.m3u8';
+      } else if (imageId === 'zee_bolly') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/zee_bolly.m3u8';
+      } else if (imageId === 'zee_action') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/zee_action.m3u8';
+      } else if (imageId === 'sony_max') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sony_max.m3u8';
+      } else if (imageId === 'sony_pix_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sony_pix.m3u8';
+      } else if (imageId === 'star_gold') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/star_gold.m3u8';
+      } else if (imageId === 'b4u_movies') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/b4u_movies.m3u8';
+        
+        
+        
+        
+        
+        
+        
+        
+      } else if (imageId === 'sony_yay') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sony_yay.m3u8';
+      } else if (imageId === 'sonic') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sonic.m3u8';
+      } else if (imageId === 'nick') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/nick.m3u8';
+      } else if (imageId === 'discovery_kids') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/discovery_kids.m3u8';
+      } else if (imageId === 'discovery_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/discovery_hd.m3u8';
+      } else if (imageId === 'sony_bbc_earth_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sony_bbc_earth_hd.m3u8';
+      } else if (imageId === 'animal_planet_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/animal_planet_hd.m3u8';
+      } else if (imageId === 'ngc_sd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/ngc_sd.m3u8';
+      } else if (imageId === 'history_tv') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/history_tv.m3u8';
+      } else if (imageId === 'sony_ten1_hd') {
+        videoSrc = 'https://proximitybdrocks.up.railway.app/auto/sony_ten1_hd.m3u8';
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      }
+      
+      return videoSrc;
+    }
+  </script>
+</body>
+</html>
+
+</body>
+</html>
+
+
+  <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script>
+</body>
+</html>
+<style>
+html, body {
+background-color: #000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+    #video-player {
+
+      width: 100%;
+      height: 35%;
+    }
+
+</style>
+<style>
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+   height: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer span {
+    padding: 5px;
+    font-size: 10px;
+    color: #fff;
+   
+  }
+</style>
+
+<div class="footer">
+  <div class="icon"><br>
+  <a href="index.html">
+   <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+   </a>
+ 
+  
+    <span>Home</span>
+</div>
+  <div class="icon">
+    <a href="https://play.google.com/store/apps/details?id=com.brave.browser">
+    <br>
+ <i class="fa-sharp fa-solid fa-ban" style="color: #ffffff;"></i>
+ </a>
+  
+    <span>Ads Block</span>
+  </div>
+</div>
